@@ -1,18 +1,23 @@
 import ContactsListItem from '../ContactsListItem/ContactsListItem'
 
-const ContactsList = ({x, id}) => {
-  console.log(id)
-
+const ContactsList = ({contacts, id,info, name}) => {
+  // console.log(id)
+  // console.log(info)
   return(
     <ul>
-      <ContactsListItem
-          id={id}
-        />
-      {/* {x.map(({}) =>(
+
         <ContactsListItem
+          info={info}
           id={id}
+          name={name}
         />
-        
+
+      {/* {contacts.map(({id,name}) =>(
+        <ContactsListItem
+          info={info}
+          id={id}
+          name={name}
+        />
       ))} */}
     </ul>
   )

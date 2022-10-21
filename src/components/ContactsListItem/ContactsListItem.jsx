@@ -1,8 +1,8 @@
-const ContactsListItem = ({id, name}) => {
-  console.log(id)
+const ContactsListItem = ({id, name,info}) => {
+  console.log()
   return(
     <li key={id}>
-      <p>{name}</p>
+      <p>{info}</p>
     </li>
   )
 }
